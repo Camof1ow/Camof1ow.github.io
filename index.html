@@ -131,48 +131,16 @@
                     <h2>Portfolio.</h2>
                 </header>
 
-                <details style="width: 400px;">
-                    <summary>
-                        <img src="/images/pic01.jpeg" alt="" style="width: 300px;">
-                        <h3>IT몬스터즈</h3>
-                        <h4>2022.08 ~ 2022.10</h4>
-                    </summary>
-                    <a href="https://www.notion.so/camof1ow/IT-ef350fd4b5fa4142abeae4443098437b?pvs=4" class="image" target="_blank">
 
-                        <div class="content">
-                            <h5>개발인원</h5>
-                            <ul>
-                                <li>BACKEND - 4명 (팀장)</li>
-                                <li>FRONTEND - 3명</li>
-                                <li>DESIGN- 2명</li>
-                            </ul>
-
-                            <h5>담당역할</h5>
-                            <ul>
-                                <li>회원관리기능 (기여도 100%)</li>
-                                <li>배포환경구축 및 서버관리 (기여도 100%)</li>
-                                <li>서버부하테스트 (기여도 50%)</li>
-                                <li>OAuth 로그인 (기여도 33%)</li>
-                            </ul>
-
-                            <h5>개발환경</h5>
-                            <ul>
-                                <li>언어 - JAVA / JavaScript</li>
-                                <li>서버 - Apache Tomcat 8.0 / AWS EC2 / Ubuntu</li>
-                                <li>DB - MySql, Amazon RDS, REDIS</li>
-                                <li>API, 라이브러리 - KAKAO/GOOGLE/NAVER OAuth2 API , REACT</li>
-                            </ul>
-                        </div>
-                    </a>
-                </details>
-                <details style="width: 400px;">
-                    <summary>
+                <details style="width: 400px; display: none" >
+                    <summary style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                         <img src="/images/img1.png" alt="" style="width: 300px;">
                         <h3>당신의 이름은 8.15</h3>
                         <h4>2024.08.05 ~ 2024.08.16 (10일 간)
                         </h4>
                     </summary>
                     <div class="content">
+                        <h2><a href="https://yourname815.vercel.app/myname" target="_blank"> 서비스 바로가기</a> </h2>
                         <h5>개발인원</h5>
                         <ul>
                             2명
@@ -207,6 +175,25 @@
                 </details>
 
 
+
+                <div class="folio_card_container">
+                    <div class="card">
+                        <img src="/images/img1.png" alt="" class="card__img">
+                        <h4 class="card__title">당신의 이름은 8.15</h4>
+                        <p class="card__description">2024.08.05 ~ 2024.08.16 (10일 간)</p>
+                        <a href="#open-modal#1" class="card__btn">더보기</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/pic01.jpeg" alt="" class="card__img">
+                        <h4 class="card__title">IT몬스터즈</h4>
+                        <p class="card__description">2022.08 ~ 2022.10 (10주)</p>
+                        <a href="#open-modal#2" class="card__btn">더보기</a>
+                    </div>
+
+                </div>
+
+
             </div>
 
         </section>
@@ -229,6 +216,81 @@
         </section>
 
     </div>
+    <div id="open-modal#1" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <div class="content">
+                <img src="/images/img1.png" alt="" style="width: 300px;">
+                <a href="https://yourname815.vercel.app/myname" target="_blank">
+                    <h4 style="color: #1e7bd8">서비스 바로가기</h4> </a>
+                <br/>
+                <h5>개발인원</h5>
+                <ul>
+                    2명
+                </ul>
+                <h5>담당역할</h5>
+                <ul>
+                    <li>프론트엔드 환경구축 및 화면 기능개발</li>
+                    <li>백엔드 서버초안 생성 및 이름생성기능, 좋아요 , 수리요청기능</li>
+                </ul>
+
+                <h5>개발환경</h5>
+                <ul>
+                    <li>백엔드 - JAVA, SpringBoot 3.3.2</li>
+                    <li>프론트엔드 - Next.js , TypeScript</li>
+                    <li>DB - MySql 8.0</li>
+                </ul>
+
+                <h5>문서 및 깃 리포</h5>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Camof1ow/symmetrical-umbrella" target="_blank">
+                            백엔드 리포</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Camof1ow/your-name-815" target="_blank">
+                            프론트엔드 리포
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="open-modal#2" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <div class="content">
+                <img src="/images/pic01.jpeg" alt="" style="width: 300px;">
+                <a href="https://www.notion.so/camof1ow/IT-ef350fd4b5fa4142abeae4443098437b?pvs=4" target="_blank">
+                    <h4 style="color: #1e7bd8">문서 바로가기</h4> </a>
+                <br/>
+                <h5>개발인원</h5>
+                <ul>
+                    <li>BACKEND - 4명 (팀장)</li>
+                    <li>FRONTEND - 3명</li>
+                    <li>DESIGN- 2명</li>
+                </ul>
+
+                <h5>담당역할</h5>
+                <ul>
+                    <li>회원관리기능 (기여도 100%)</li>
+                    <li>배포환경구축 및 서버관리 (기여도 100%)</li>
+                    <li>서버부하테스트 (기여도 50%)</li>
+                    <li>OAuth 로그인 (기여도 33%)</li>
+                </ul>
+
+                <h5>개발환경</h5>
+                <ul>
+                    <li>언어 - JAVA / JavaScript</li>
+                    <li>서버 - Apache Tomcat 8.0 / AWS EC2 / Ubuntu</li>
+                    <li>DB - MySql, Amazon RDS, REDIS</li>
+                    <li>API, 라이브러리 - KAKAO/GOOGLE/NAVER OAuth2 API , REACT</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Footer -->
     <section id="footer">
