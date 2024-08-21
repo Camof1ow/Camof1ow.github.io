@@ -3423,6 +3423,7 @@ summary:hover {
 	opacity: 0;
 	pointer-events: none;
 	transition: all 0.3s;
+	overflow: auto; /* 스크롤 가능하게 설정 */
 }
 .modal-window:target {
 	visibility: visible;
@@ -3438,6 +3439,9 @@ summary:hover {
 	padding: 2em;
 	background: white;
 	box-shadow: 2px 2px 2px;
+	border-radius: 1rem;
+	max-height: 80vh; /* 화면 높이의 80%로 제한 */
+	overflow-y: auto; /* 모달 내부에서 세로 스크롤 가능하게 설정 */
 }
 .modal-window header {
 	font-weight: bold;
