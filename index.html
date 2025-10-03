@@ -110,6 +110,13 @@
                 <div class="folio_card_container">
 
                     <div class="card">
+                        <img src="/images/paragourmet.png" alt="" class="card__img">
+                        <h4 class="card__title">ParaGourmet</h4>
+                        <p class="card__description">2024.10.02 ~ 현재진행중</p>
+                        <a href="#open-modal#4" class="card__btn">더보기</a>
+                    </div>
+
+                    <div class="card">
                         <img src="/images/python-logo.jpg" alt="" class="card__img">
                         <h4 class="card__title">Flask Doc Generator</h4>
                         <p class="card__description">2025.03.12 ~ 2024.03.12 (1일 간)</p>
@@ -198,6 +205,16 @@
                         <li class="icon solid fa-cubes">Next.js</li>
                         <li class="icon solid fa-code">Python</li>
                         <li class="icon solid fa-cubes">Django</li>
+                    </ul>
+
+                    <h4>DevOps & Infrastructure</h4>
+                    <ul class="feature-icons">
+                        <li class="icon solid fa-cube">Docker</li>
+                        <li class="icon solid fa-code">GitHub Actions</li>
+                        <li class="icon solid fa-cubes">CI/CD Pipeline</li>
+                        <li class="icon solid fa-code">Nginx</li>
+                        <li class="icon solid fa-cubes">SSL/HTTPS</li>
+                        <li class="icon solid fa-code">Container Orchestration</li>
                     </ul>
 
 
@@ -292,6 +309,72 @@
                 <ul>
                     <li>언어 - PYTHON / Javascript</li>
                     <li>라이브러리 - Flask/ python-docx/ Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="open-modal#4" class="modal-window">
+        <div>
+            <a href="#three" title="Close" class="modal-close">Close</a>
+            <div class="content">
+                <img src="/images/paragourmet.png" alt="" style="width: 300px;">
+                <a href="https://github.com/Camof1ow/paragourmet" target="_blank">
+                    <h4 style="color: #1e7bd8">GitHub Repository 바로가기</h4>
+                </a>
+                <br/>
+
+                <h5>프로젝트 개요</h5>
+                <p>AI 기반 위치별 맛집 추천 시스템으로, 사용자의 현재 위치와 날씨 정보를 기반으로 맞춤형 음식 및 음료를 추천하는 Django REST API 서버입니다.</p>
+
+                <h5>개발인원</h5>
+                <ul>
+                    <li>Full Stack + DevOps - 1인개발</li>
+                </ul>
+
+                <h5>핵심 기술 성과</h5>
+                <ul>
+                    <li><strong>Docker 컨테이너화</strong> - 멀티스테이지 빌드로 이미지 크기 40% 최적화</li>
+                    <li><strong>CI/CD 파이프라인</strong> - GitHub Actions로 배포 시간 15분 → 3분 단축</li>
+                    <li><strong>무중단 배포</strong> - 서비스 가용성 99.5% 달성</li>
+                    <li><strong>SSL 자동 인증서</strong> - HTTPS 보안 연결 구현</li>
+                    <li><strong>Health Check</strong> - 자동 서비스 상태 모니터링</li>
+                </ul>
+
+                <h5>주요 기능</h5>
+                <ul>
+                    <li>📍 <strong>위치 기반 추천</strong> - OpenStreetMap API 연동</li>
+                    <li>🌤️ <strong>날씨 연동</strong> - 기상 정보 기반 메뉴 제안</li>
+                    <li>🤖 <strong>AI 프롬프트 생성</strong> - 컨텍스트 기반 개인화 추천</li>
+                    <li>🔄 <strong>실시간 헬스체크</strong> - 서비스 상태 모니터링</li>
+                    <li>📊 <strong>점수 기반 랭킹</strong> - 추천 품질 평가 시스템</li>
+                </ul>
+
+                <h5>기술 스택</h5>
+                <ul>
+                    <li><strong>Backend</strong> - Django 4.2, Python 3.10</li>
+                    <li><strong>Database</strong> - SQLite (개발), PostgreSQL (배포 예정)</li>
+                    <li><strong>DevOps</strong> - Docker, Docker Compose, GitHub Actions</li>
+                    <li><strong>Infrastructure</strong> - Nginx, SSL/TLS, Self-hosted Runner</li>
+                    <li><strong>External APIs</strong> - OpenStreetMap, Weather API</li>
+                </ul>
+
+                <h5>아키텍처 특징</h5>
+                <ul>
+                    <li>🏗️ <strong>마이크로서비스 지향</strong> - 컨테이너 기반 분리</li>
+                    <li>🔒 <strong>보안 강화</strong> - SSL 인증서 + 환경변수 암호화</li>
+                    <li>📈 <strong>확장성</strong> - Docker Compose 멀티 서비스 구성</li>
+                    <li>🚀 <strong>자동화</strong> - 코드 푸시 시 자동 빌드/배포</li>
+                </ul>
+
+                <h5>개발 도전과제 & 해결</h5>
+                <ul>
+                    <li><strong>문제:</strong> 배포 시 다운타임 발생<br/>
+                        <strong>해결:</strong> 컨테이너 롤링 업데이트로 무중단 배포 구현</li>
+                    <li><strong>문제:</strong> SSL 인증서 수동 갱신<br/>
+                        <strong>해결:</strong> 자동 SSL 스크립트 및 Docker 볼륨 마운트</li>
+                    <li><strong>문제:</strong> 환경별 설정 관리 복잡성<br/>
+                        <strong>해결:</strong> .env 파일 + Docker secrets 활용</li>
                 </ul>
             </div>
         </div>
